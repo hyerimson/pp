@@ -1,4 +1,5 @@
-import { createBrowserClient } from "@supabase/ssr";
+import { createClient } from '@/lib/supabase/client'
+const supabase = createClient()
 
 export function createClient() {
   return createBrowserClient(
